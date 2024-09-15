@@ -119,7 +119,7 @@ Ruby, but I don't like the programming language and while I prefer to minimize
 my use of dependencies, when I have to use some, I prefer to reach for ones in
 the Node ecosystem over the ones in the Ruby ecosystem.
 
-## Dependency choices
+### Dependency choices
 
 I am using `latest` versions of all dependencies (`@napi-rs/canvas` and Bun's
 types as a development dependenct) as I want the code to break the moment a new
