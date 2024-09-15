@@ -37,6 +37,11 @@ This would allow me to drop the bespoke HTML to DOM parsing logic.
 
 ## Notes
 
+## Browser Jam #01 submission
+
+I submitted Leveret to the first ever Browser Jam here:
+https://github.com/BrowserJam/jam001/pull/14
+
 ### Architecture breakdown
 
 1. Download the HTML text and parse it to a DOM
