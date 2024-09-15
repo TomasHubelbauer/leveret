@@ -55,8 +55,6 @@ function doLayout(node: LayoutNode, getSuperNode: (node: LayoutNode) => LayoutEl
     return;
   }
 
-  node.width = 0;
-  node.height = 0;
   node.x = cursor.x + (styles?.x ?? 0);
   node.y = cursor.y + (styles?.y ?? 0);
 
@@ -296,5 +294,11 @@ function doLayout(node: LayoutNode, getSuperNode: (node: LayoutNode) => LayoutEl
       //     chainSuperNode = getSuperNode(chainSuperNode);
       //   }
     }
+
+    return;
   }
+
+  // Mark the node as empty if it has no sub-nodes
+  node.width = 0;
+  node.height = 0;
 }
