@@ -18,6 +18,10 @@ state; perhaps during the next Browser Jam, more improvements will be delivered.
 
 ## Tasks
 
+### Look into using `HTMLRewriter` as a solution for HTML parsing
+
+As in https://github.com/TomasHubelbauer/bun-domparser.
+
 ### Improve the HTML parser to not set a node as `cursor` until fully closed
 
 Right now, I'm materializing nodes the moment their opening tag finishes parsing
