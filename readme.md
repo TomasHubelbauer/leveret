@@ -22,6 +22,10 @@ state; perhaps during the next Browser Jam, more improvements will be delivered.
 
 As in https://github.com/TomasHubelbauer/bun-domparser.
 
+### Look into using Bun's experimental CSS parser
+
+https://bun.sh/blog/bun-v1.1.30#experimental-css-parsing-bundling
+
 ### Improve the HTML parser to not set a node as `cursor` until fully closed
 
 Right now, I'm materializing nodes the moment their opening tag finishes parsing
