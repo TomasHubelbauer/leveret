@@ -18,15 +18,26 @@ state; perhaps during the next Browser Jam, more improvements will be delivered.
 
 ## Tasks
 
-### Look into using `HTMLRewriter` as a solution for HTML parsing
+### Use my `HTMLRewriter`-based `DOMParser` and drop the custom HTML parser here
 
-As in https://github.com/TomasHubelbauer/bun-domparser.
+https://github.com/TomasHubelbauer/bun-domparser
 
 ### Look into using Bun's experimental CSS parser
 
 https://bun.sh/blog/bun-v1.1.30#experimental-css-parsing-bundling
 
+`HTMLRewriter` will also probably be usable to implement a basic query selector
+engine by parsing the whole HTML and then parsing it again with the CSS selector
+and comparing the two trees to see which nodes of the original tree match the
+nodes of the selector-driven tree.
+
+This should be combined with the usage of the `HTMLRewriter`-based `DOMParser` I
+mention above.
+
 ### Improve the HTML parser to not set a node as `cursor` until fully closed
+
+Note that this will become obsolete once I switch to my `DOMParser` based on the
+`HTMLRewriter` API bundled with Bun.
 
 Right now, I'm materializing nodes the moment their opening tag finishes parsing
 which allows me to simplify the attribute parsing states, but results in an
